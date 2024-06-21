@@ -1,15 +1,22 @@
 export default async function loadingComponents(component, parent) {
-  const response = await fetch(`../src/html/${component}.html`);
+  try {
+    const response = await fetch(`../src/html/${component}.html`);
   const html = await response.text();
   const root = parent;
   if (component === "footer") {
-    root.insertAdjacentHTML("beforeend", html);
+    root.insertAdjacentHTML("afterend", html);
   } else if(component === "header") {
     root.insertAdjacentHTML("afterbegin", html);
   } else {
     root.insertAdjacentHTML("beforeend", html);
   }
+  } catch(e) {
+    console.log(e);
+  }
+  
 }
+
+
 const main = document.getElementById("main");
 loadingComponents("header", document.body).then(() => {
   Promise.all([
@@ -21,6 +28,6 @@ loadingComponents("header", document.body).then(() => {
     loadingComponents("section-topCreators", main),
     loadingComponents("section-subscribe", main)
   ]).then(() => {
-    loadingComponents("footer", document.body);
-  });
+    loadingComponents("footer", main);
+  }).catch((e) => console.log(e));
 });
