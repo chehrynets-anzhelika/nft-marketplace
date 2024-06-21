@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header-item {
+    @apply border-b-2 border-transparent hover:border-text-secondary hover:text-text-secondary hover:cursor-pointer transition-all duration-300 inline-block;
+}
