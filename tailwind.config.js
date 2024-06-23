@@ -15,6 +15,10 @@ module.exports = {
         "bg-btn": "#594846",
         "blur": "#4F464E59",
         "linkcolor": "#594D5E",
+        "bg-card": "#3D2942",
+        "cardcolor": "#BDAAC1",
+        "card-color-second": "#C6BFC8",
+        "card-btn-bg": "rgba(233, 215, 167, 0.1)"
       },
       gridTemplateColumns: {
         "layout": "repeat(auto-fit, minmax(200px, 1fr))"
