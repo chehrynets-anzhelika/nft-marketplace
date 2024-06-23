@@ -1,6 +1,6 @@
 export default async function loadingComponents(component, parent) {
   try {
-    const response = await fetch(`../src/html/${component}.html`);
+  const response = await fetch(`../src/html/${component}.html`);
   const html = await response.text();
   const root = parent;
   if (component === "footer") {
