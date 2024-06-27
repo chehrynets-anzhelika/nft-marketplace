@@ -1,0 +1,50 @@
+include ./libs/_libs
+section.max-w-screen-xl.min-w-sm.mx-auto.pb-20
+  .md_flex.md_justify-between.md_px-4.md_my-12.md_relative.lg_mb-40
+    div(class="bg-hero-pattern bg-cover blur-[35%] pt-14 relative pb-20 md_bg-none md_w-1/2 md_pt-0")
+      h1(class="font-title font-bold text-[42px] leading-[63px] text-center md_text-start xl_text-[85px] lg_leading-[85px] xl_leading-[130px]")
+        | Explore, Buy and Sell the
+        span.text-text-secondary Best NFTs!
+      div(class="w-full flex items-center justify-center absolute bottom-[-27px] md_bottom-40 md_left-0 md_justify-start xl_bottom-56")
+        button(class="flex justify-center cursor-pointer border-[1px] border-text-secondary text-lg py-4 px-10 items-center w-[155px] h-[54px] bg-text-secondary text-btn-color mr-5") Explore
+        button(class="flex justify-center cursor-pointer border-[1px] border-text-secondary text-lg py-4 px-10 items-center w-[155px] h-[54px] bg-[#594846]") Create
+    div(class="bg-blur -z-20 pt-20 pb-11 px-10 flex flex-col justify-center md_bg-transparent md_w-1/2 md_ml-[100px] md_p-0")
+      .relative
+        +imageClass('hero-image', 'png', 'inline-block w-full h-auto object-cover')
+        div(class="absolute top-8 left-1/2 -translate-x-1/2 w-[90%] border-transparent-2 rounded py-2 px-3 flex items-center justify-around gap-2 bg-gradient-to-r from-[#FF893D17] to-[#FAFAFAE5]")
+          .flex.items-center.flex-col.justify-start
+            p.font-title.font-medium.text-base Current bid
+            span(class="font-title font-bold text-[22px]") 0.99 ETH
+          .flex.flex-col.items-center.justify-start
+            p.font-title.font-medium.text-base Ends in
+            span(class="font-title font-bold text-[22px]") 25 hrs
+        .bg-white.py-9.flex.justify-center
+          div(class="flex justify-between w-[90%]")
+            div
+              p.text-btn-color.font-title.font-semibold.text-lg Artist
+              span.text-linkcolor.font-main.font-normal.text-sm @wzard
+            button.py-2.px-6.font-main.font-semibold.text-base.text-black.bg-text-secondary
+              | Start
+              | Bid
+    ul.flex.justify-between.px-4.py-14.md_absolute.md_bottom-0.md_p-0.md_gap-5.lg_gap-20
+      li
+        p(class="font-title font-bold text-4xl leading-[45px]") 32k+
+        span(class="font-normal text-base leading-9 text-[#9B9E9A]") Artworks
+      li
+        p(class="font-title font-bold text-4xl leading-[45px]") 20k+
+        span(class="font-normal text-base leading-9 text-[#9B9E9A]") Auctions
+      li
+        p(class="font-title font-bold text-4xl leading-[45px]") 12k+
+        span(class="font-normal text-base leading-9 text-[#9B9E9A]") Creators
+  ul(class="px-4 flex flex-wrap items-end justify-around gap-10 min-[482px]_items-center")
+    li
+      +image('1', 'png')
+    li
+      +image('2', 'png')
+    li
+      +image('3', 'png')
+    li
+      +image('4', 'png')
+  a.hidden(href="#")
+    svg.size-6(xmlns="http_//www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="1.5", stroke="currentColor")
+      path(stroke-linecap="round", stroke-linejoin="round", d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3")

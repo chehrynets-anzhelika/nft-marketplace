@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .header-item {
-    @apply border-b-2 border-transparent hover:border-text-secondary hover:text-text-secondary hover:cursor-pointer transition-all duration-300 inline-block;
+    @apply border-b-2 border-transparent hover_border-text-secondary hover_text-text-secondary hover_cursor-pointer transition-all duration-300 inline-block;
 }
