@@ -1,9 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "index.html",
-    "src/html/*.html",
-  ],
+  content: ["./src/**/*.{html,js,pug}"],
+  separator: '_',
   theme: {
     extend: {
       colors: {
@@ -28,7 +26,7 @@ module.exports = {
         'title': 'Oxanium'
       },
       backgroundImage: {
-        "hero-pattern": "url('/public/images/bg.png')"
+        "hero-pattern": "url('/src/images/bg.png')"
       }
     },
   },

@@ -1,1 +1,6 @@
-import "./js/loadingHtml.js";
+import "./main.css";
+function test(a,b) {
+    console.log(a*b);
+}
+
+test(2,3);

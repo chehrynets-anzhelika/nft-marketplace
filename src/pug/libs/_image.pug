@@ -1,0 +1,8 @@
+mixin image(name, format)
+    img(src=require(`../src/images/${name}.${format}`) alt=name)
+
+mixin imageClass(name, format, data)
+    img(src=require(`../src/images/${name}.${format}`) alt=name)(class=data)
+
+mixin imageRandomUser(gender, number, data)
+    img(src=(`https://randomuser.me/api/portraits/${gender}/${number}.jpg`) alt=author)(class=data)

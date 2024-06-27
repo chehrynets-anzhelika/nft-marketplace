@@ -1,0 +1,40 @@
+include ./libs/_libs
+footer.max-w-screen-xl.min-w-sm.mx-auto.flex.flex-col.items-center.justify-center.pt-14.pb-3.text-footer-text.px-4.relative.lg_flex-row.lg_gap-4
+  a.inline-block.mb-12(href="#")
+   +imageClass('footer-logo', 'png', 'w-[112px] h-[112px] lg_w-[194px] lg_h-[194px]')
+  div(class="text-center leading-9 lg_w-1/3 lg_self-start lg_text-start")
+    p.mb-11.text-lg.lg_mb-0.lg_mt-2.lg_text-xl Nec, enim sed lacus, magna pharetra. Phasellus tincidunt nulla pharetra gravida est.
+  div(class="flex w-full items-center justify-around mb-4 lg_w-2/4")
+    div
+      h3.font-bold.text-text-main.text-2xl.leading-9 About Us
+      ul(class="text-lg leading-[50px] lg_text-xl lg_leading-[50px]")
+        li.cursor-pointer
+          a(href="#") About NFTs
+        li.cursor-pointer
+          a(href="#") Live Auctions
+        li.cursor-pointer
+          a(href="#") NFT Blog
+        li.cursor-pointer
+          a(href="#") Activity
+    div
+      h3.font-bold.text-text-main.text-2xl.leading-9 Support
+      ul(class="text-lg leading-[50px] lg_text-xl lg_leading-[50px]")
+        li.cursor-pointer
+          a(href="#") Help &amp; Support
+        li.cursor-pointer
+          a(href="#") Item Details
+        li.cursor-pointer
+          a(href="#") Author Profile
+        li.cursor-pointer
+          a(href="#") Collection
+  div(class="w-3/5 lg_absolute lg_left-[209px] lg_w-1/3")
+   ul.flex.justify-between.items-center.mb-14.lg_justify-start.lg_ml-4.lg_gap-8.lg_mt-12
+      li.cursor-pointer
+       +image('youtube', 'png')
+      li.cursor-pointer
+       +image('twitter', 'png')
+      li.cursor-pointer
+       +image('facebbok', 'png')
+      li.cursor-pointer
+       +image('google', 'png')
+  p(class="absolute bottom-4 font-normal text-xl lg_left-[209px] lg_ml-4 lg_bottom-10 lg_w-1/3") All rights reserved@2021
