@@ -1,146 +1,148 @@
 include ./libs/_libs
-section(class="max-w-screen-xl min-w-sm px-4 pt-[75px] pb-[60px] bg-blur")
-  .flex.justify-center.items-center
-    h2(class="relative inline-block font-title font-bold text-4xl mb-[68px] before_absolute before_-z-10 before_block before_bg-[#8613A5] before_w-[84px] before_h-[84px] before_rounded-[50%] before_-bottom-1/2 before_-left-[1.25rem]")
+section(class="bg-blur mx-auto")
+ div(class="max-w-screen-xl min-w-sm px-4 pt-[75px] pb-[60px] mx-auto")
+  .flex.justify-center.items-center.md_relative
+    h2(class="md_text-6xl md_mb-[88px] relative inline-block font-title font-bold text-4xl mb-[68px] before_absolute before_-z-10 before_block before_bg-[#8613A5] before_w-[84px] before_h-[84px] before_rounded-[50%] before_-bottom-1/2 before_-left-[1.25rem] md_before_w-[110px] md_before_h-[110px]")
       | Live Auctions
+    div(class="hidden md_flex md_absolute top-[45%] right-0")
+     div(class="cursor-pointer border opacity-25 rounded-full w-[54px] h-[54px] flex items-center justify-center mr-7 bg-text-main")
+      svg.size-6(xmlns="http://www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="3", stroke="#000")
+        path(stroke-linecap="round", stroke-linejoin="round", d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18")
+     div(class="cursor-pointer border rounded-full w-[54px] h-[54px] flex items-center justify-center bg-text-main")
+      svg.size-6(xmlns="http://www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="3", stroke="#000")
+        path(stroke-linecap="round", stroke-linejoin="round", d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3")
   div
-    ul.flex.items-center.flex-col.gap-12
-      li.bg-bg-card.w-full.p-6.flex.flex-col.gap-3
-        .relative
-          +imageClass('6', 'jpg', 'w-full h-auto')
-          .absolute(class="absolute w-1/2 bottom-0 bg-gradient-to-r from-[#8613A5] to-[#FAFAFAA6] py-3 px-9")
-            time.font-semibold 09:42:15
+    ul(class="flex items-center flex-col gap-12 md_flex-row md_justify-between overflow-hidden")
+      li(class="bg-bg-card w-full p-6 flex flex-col gap-3 max-w-[495px] min-w-[343px] h-[560px]")
+        .relative(class="relative h-[318px]")
+          +imageClass('6', 'jpg', 'w-full h-full object-cover')
+          div(class="absolute text-center w-1/2 bottom-0 bg-gradient-to-r from-[#8613A5] to-[#FAFAFAA6] py-3 px-9")
+            time.font-semibold.md_text-2xl 09:42:15
         .flex.items-center.justify-between.flex-col.gap-5
          .w-full.flex.justify-between
             div(class="flex gap-2.5")
-              +imageRandomUser('women', '84', 'w-10 h-10 rounded-[50%]')
+              +imageRandomUser('women', '84', 'w-10 h-10 rounded-[50%] md_w-14 md_h-14')
               div
-                p.font-semibold Digital Art
-                span.text-cardcolor.text-sm.font-normal by @poiu
+                p.font-semibold.md_text-2xl.md_font-medium Digital Art
+                span.text-cardcolor.text-sm.font-normal.md_text-xl by @poiu
             .flex.gap-1.items-center
-              svg.size-6(xmlns="http_//www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="1.5", stroke="#BDAAC1")
+              svg.size-6.md_size-7(xmlns="http_//www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="1.5", stroke="#BDAAC1")
                 path(stroke-linecap="round", stroke-linejoin="round", d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z")
-                  span.text-cardcolor.text-2xl.font-normal 41
+                  span.text-cardcolor.text-2xl.font-normal.md_text-3xl 41
         .w-full.flex.justify-between
-              p.font-normal.text-xl.text-card-color-second Current Bid
+              p.font-normal.text-xl.text-card-color-second.md_text-2xl Current Bid
               p.font-title.font-bold.text-2xl 9.45 ETH
-        button(class='w-full border border-[#BCB39A] bg-card-btn-bg font-medium text-xl py-3')
+        button(class='w-full border border-[#BCB39A] bg-card-btn-bg font-medium text-xl py-3 md_text-2xl')
                     | Place a
                     | bid
-      li.bg-bg-card.w-full.p-6.flex.flex-col.gap-3
-        .relative
-          +imageClass('5', 'jpg', 'w-full h-auto')
-          .absolute(class="absolute w-1/2 bottom-0 bg-gradient-to-r from-[#8613A5] to-[#FAFAFAA6] py-3 px-9")
-            time.font-semibold 01:20:14
+      li(class="bg-bg-card w-full p-6 flex flex-col gap-3 max-w-[495px] min-w-[343px] h-[560px]")
+        .relative(class="relative h-[318px]")
+          +imageClass('5', 'jpg', 'w-full h-full object-cover')
+          div(class="absolute text-center w-1/2 bottom-0 bg-gradient-to-r from-[#8613A5] to-[#FAFAFAA6] py-3 px-9")
+            time.font-semibold.md_text-2xl 01:20:14
         .flex.items-center.justify-between.flex-col.gap-5
          .w-full.flex.justify-between
             div(class="flex gap-2.5")
-              +imageRandomUser('men', '51', 'w-10 h-10 rounded-[50%]')
+              +imageRandomUser('men', '51', 'w-10 h-10 rounded-[50%] md_w-14 md_h-14')
               div
-                p.font-semibold Digital Art
-                span.text-cardcolor.text-sm.font-normal by @ihnvc
+                p.font-semibold.md_text-2xl.md_font-medium Digital Art
+                span.text-cardcolor.text-sm.font-normal.md_text-xl by @ihnvc
             .flex.gap-1.items-center
-              svg.size-6(xmlns="http_//www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="1.5", stroke="#BDAAC1")
+              svg.size-6.md_size-7(xmlns="http_//www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="1.5", stroke="#BDAAC1")
                 path(stroke-linecap="round", stroke-linejoin="round", d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z")
-                  span.text-cardcolor.text-2xl.font-normal 54
+                  span.text-cardcolor.text-2xl.font-normal.md_text-3xl 54
         .w-full.flex.justify-between
-              p.font-normal.text-xl.text-card-color-second Current Bid
+              p.font-normal.text-xl.text-card-color-second.md_text-2xl Current Bid
               p.font-title.font-bold.text-2xl 6.41 ETH
-        button(class='w-full border border-[#BCB39A] bg-card-btn-bg font-medium text-xl py-3')
+        button(class='w-full border border-[#BCB39A] bg-card-btn-bg font-medium text-xl py-3 md_text-2xl')
                     | Place a
                     | bid
-      li.bg-bg-card.w-full.p-6.flex.flex-col.gap-3
-        .relative
-          +imageClass('4', 'jpg', 'w-full h-auto')
-          .absolute(class="absolute w-1/2 bottom-0 bg-gradient-to-r from-[#8613A5] to-[#FAFAFAA6] py-3 px-9")
-            time.font-semibold 04:20:14
+      li(class="bg-bg-card w-full p-6 flex flex-col gap-3 max-w-[495px] min-w-[343px] h-[560px]")
+        .relative(class="relative h-[318px]")
+          +imageClass('4', 'jpg', 'w-full h-full object-cover')
+          div(class="absolute text-center w-1/2 bottom-0 bg-gradient-to-r from-[#8613A5] to-[#FAFAFAA6] py-3 px-9")
+            time.font-semibold.md_text-2xl 04:20:14
         .flex.items-center.justify-between.flex-col.gap-5
          .w-full.flex.justify-between
             div(class="flex gap-2.5")
-              +imageRandomUser('men', '12', 'w-10 h-10 rounded-[50%]')
+              +imageRandomUser('men', '12', 'w-10 h-10 rounded-[50%] md_w-14 md_h-14')
               div
-                p.font-semibold Virtual Art
-                span.text-cardcolor.text-sm.font-normal by @trfgv
+                p.font-semibold.md_text-2xl.md_font-medium Virtual Art
+                span.text-cardcolor.text-sm.font-normal.md_text-xl by @trfgv
             .flex.gap-1.items-center
-              svg.size-6(xmlns="http_//www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="1.5", stroke="#BDAAC1")
+              svg.size-6.md_size-7(xmlns="http_//www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="1.5", stroke="#BDAAC1")
                 path(stroke-linecap="round", stroke-linejoin="round", d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z")
-                  span.text-cardcolor.text-2xl.font-normal 84
+                  span.text-cardcolor.text-2xl.font-normal.md_text-3xl 84
         .w-full.flex.justify-between
-              p.font-normal.text-xl.text-card-color-second Current Bid
+              p.font-normal.text-xl.text-card-color-second.md_text-2xl Current Bid
               p.font-title.font-bold.text-2xl 8.96 ETH
-        button(class='w-full border border-[#BCB39A] bg-card-btn-bg font-medium text-xl py-3')
+        button(class='w-full border border-[#BCB39A] bg-card-btn-bg font-medium text-xl py-3 md_text-2xl')
                     | Place a
                     | bid
-      li.bg-bg-card.w-full.p-6.flex.flex-col.gap-3
-        .relative
-          +imageClass('3', 'jpg', 'w-full h-auto')
-          .absolute(class="absolute w-1/2 bottom-0 bg-gradient-to-r from-[#8613A5] to-[#FAFAFAA6] py-3 px-9")
-            time.font-semibold 06:10:13
+      li(class="hidden bg-bg-card w-full p-6 flex-col gap-3 max-w-[495px] min-w-[343px] h-[560px]")
+        .relative(class="relative h-[318px]")
+          +imageClass('3', 'jpg', 'w-full h-full object-cover')
+          div(class="absolute text-center w-1/2 bottom-0 bg-gradient-to-r from-[#8613A5] to-[#FAFAFAA6] py-3 px-9")
+            time.font-semibold.md_text-2xl 06:10:13
         .flex.items-center.justify-between.flex-col.gap-5
          .w-full.flex.justify-between
             div(class="flex gap-2.5")
-              +imageRandomUser('women', '17', 'w-10 h-10 rounded-[50%]')
+              +imageRandomUser('women', '17', 'w-10 h-10 rounded-[50%] md_w-14 md_h-14')
               div
-                p.font-semibold Virtual Art
-                span.text-cardcolor.text-sm.font-normal by @trews
+                p.font-semibold.md_text-2xl.md_font-medium Virtual Art
+                span.text-cardcolor.text-sm.font-normal.md_text-xl by @trews
             .flex.gap-1.items-center
-              svg.size-6(xmlns="http_//www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="1.5", stroke="#BDAAC1")
+              svg.size-6.md_size-7(xmlns="http_//www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="1.5", stroke="#BDAAC1")
                 path(stroke-linecap="round", stroke-linejoin="round", d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z")
-                  span.text-cardcolor.text-2xl.font-normal 74
+                  span.text-cardcolor.text-2xl.font-normal.md_text-3xl 74
         .w-full.flex.justify-between
-              p.font-normal.text-xl.text-card-color-second Current Bid
+              p.font-normal.text-xl.text-card-color-second.md_text-2xl Current Bid
               p.font-title.font-bold.text-2xl 4.22 ETH
-        button(class='w-full border border-[#BCB39A] bg-card-btn-bg font-medium text-xl py-3')
+        button(class='w-full border border-[#BCB39A] bg-card-btn-bg font-medium text-xl py-3 md_text-2xl')
                     | Place a
                     | bid
-      li.bg-bg-card.w-full.p-6.flex.flex-col.gap-3
-        .relative
-          +imageClass('2', 'jpg', 'w-full h-auto')
-          .absolute(class="absolute w-1/2 bottom-0 bg-gradient-to-r from-[#8613A5] to-[#FAFAFAA6] py-3 px-9")
-            time.font-semibold 04:20:14
+      li(class="hidden bg-bg-card w-full p-6 flex-col gap-3 max-w-[495px] min-w-[343px] h-[560px]")
+        .relative(class="relative h-[318px]")
+          +imageClass('2', 'jpg', 'w-full h-full object-cover')
+          div(class="absolute text-center w-1/2 bottom-0 bg-gradient-to-r from-[#8613A5] to-[#FAFAFAA6] py-3 px-9")
+            time.font-semibold.md_text-2xl 04:20:14
         .flex.items-center.justify-between.flex-col.gap-5
          .w-full.flex.justify-between
             div(class="flex gap-2.5")
-              +imageRandomUser('women', '12', 'w-10 h-10 rounded-[50%]')
+              +imageRandomUser('women', '12', 'w-10 h-10 rounded-[50%] md_w-14 md_h-14')
               div
-                p.font-semibold Digital Art
-                span.text-cardcolor.text-sm.font-normal by @oops
+                p.font-semibold.md_text-2xl.md_font-medium Digital Art
+                span.text-cardcolor.text-sm.font-normal.md_text-xl by @oops
             .flex.gap-1.items-center
-              svg.size-6(xmlns="http_//www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="1.5", stroke="#BDAAC1")
+              svg.size-6.md_size-7(xmlns="http_//www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="1.5", stroke="#BDAAC1")
                 path(stroke-linecap="round", stroke-linejoin="round", d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z")
-                  span.text-cardcolor.text-2xl.font-normal 86
+                  span.text-cardcolor.text-2xl.font-normal.md_text-3xl 86
         .w-full.flex.justify-between
-              p.font-normal.text-xl.text-card-color-second Current Bid
+              p.font-normal.text-xl.text-card-color-second.md_text-2xl Current Bid
               p.font-title.font-bold.text-2xl 5.12 ETH
-        button(class='w-full border border-[#BCB39A] bg-card-btn-bg font-medium text-xl py-3')
+        button(class='w-full border border-[#BCB39A] bg-card-btn-bg font-medium text-xl py-3 md_text-2xl')
                     | Place a
                     | bid
-      li.bg-bg-card.w-full.p-6.flex.flex-col.gap-3
-        .relative
-          +imageClass('1', 'jpg', 'w-full h-auto')
-          .absolute(class="absolute w-1/2 bottom-0 bg-gradient-to-r from-[#8613A5] to-[#FAFAFAA6] py-3 px-9")
-            time.font-semibold 03:18:24
+      li(class="hidden bg-bg-card w-full p-6 flex-col gap-3 max-w-[495px] min-w-[343px] h-[560px]")
+        .relative(class="relative h-[318px]")
+          +imageClass('1', 'jpg', 'w-full h-full object-cover')
+          div(class="absolute text-center w-1/2 bottom-0 bg-gradient-to-r from-[#8613A5] to-[#FAFAFAA6] py-3 px-9")
+            time.font-semibold.md_text-2xl 03:18:24
         .flex.items-center.justify-between.flex-col.gap-5
          .w-full.flex.justify-between
             div(class="flex gap-2.5")
-              +imageRandomUser('men', '62', 'w-10 h-10 rounded-[50%]')
+              +imageRandomUser('men', '62', 'w-10 h-10 rounded-[50%] md_w-14 md_h-14')
               div
-                p.font-semibold Virtual Art
-                span.text-cardcolor.text-sm.font-normal by @wzard
+                p.font-semibold.md_text-2xl.md_font-medium Virtual Art
+                span.text-cardcolor.text-sm.font-normal.md_text-xl by @wzard
             .flex.gap-1.items-center
-              svg.size-6(xmlns="http_//www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="1.5", stroke="#BDAAC1")
+              svg.size-6.md_size-7(xmlns="http_//www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="1.5", stroke="#BDAAC1")
                 path(stroke-linecap="round", stroke-linejoin="round", d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z")
-                  span.text-cardcolor.text-2xl.font-normal 92
+                  span.text-cardcolor.text-2xl.font-normal.md_text-3xl 92
         .w-full.flex.justify-between
-              p.font-normal.text-xl.text-card-color-second Current Bid
+              p.font-normal.text-xl.text-card-color-second.md_text-2xl Current Bid
               p.font-title.font-bold.text-2xl 4.89 ETH
-        button(class='w-full border border-[#BCB39A] bg-card-btn-bg font-medium text-xl py-3')
+        button(class='w-full border border-[#BCB39A] bg-card-btn-bg font-medium text-xl py-3 md_text-2xl')
                     | Place a
                     | bid
-                    
-    div
-        svg.size-6(xmlns="http_//www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="1.5", stroke="currentColor")
-                path(stroke-linecap="round", stroke-linejoin="round", d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18")
-        svg.size-6(xmlns="http_//www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="1.5", stroke="currentColor")
-                    path(stroke-linecap="round", stroke-linejoin="round", d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3")
-        button View All
+    button.mt-12.mx-auto.block.cursor-pointer.py-3.px-14.font-semibold.text-lg.border.border-text-secondary.md_text-3xl.md_font-medium View All
