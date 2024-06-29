@@ -1,0 +1,81 @@
+include ./libs/_libs
+section(class="max-w-screen-xl min-w-sm px-4 pt-[75px] pb-[60px] mx-auto")
+  .flex.justify-center.items-center
+    h2(class="md_text-6xl md_mb-[88px] relative inline-block text-nowrap font-title font-bold text-4xl mb-[68px] before_absolute before_-z-10 before_block before_bg-[#E03054] before_w-[84px] before_h-[84px] before_rounded-[50%] before_-bottom-1/2 before_-left-[1.25rem] md_before_w-[110px] md_before_h-[110px]")
+      | Popular Collections
+  .md_relative
+    div(class="hidden md_flex w-full md_justify-between md_absolute md_top-[35%]")
+     div(class="z-20 cursor-pointer border opacity-25 rounded-full w-[54px] h-[54px] flex items-center justify-center mr-7 bg-text-main")
+       svg.size-6(xmlns="http_//www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="3", stroke="#000")
+        path(stroke-linecap="round", stroke-linejoin="round", d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18")
+     div(class="z-20 cursor-pointer border rounded-full w-[54px] h-[54px] flex items-center justify-center mr-7 bg-text-main")
+       svg.size-6(xmlns="http_//www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="3", stroke="#000")
+        path(stroke-linecap="round", stroke-linejoin="round", d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3")
+    ul.flex.items-center.flex-col.gap-12.md_flex-row.md_justify-between.overflow-hidden.md_gap-9
+                    li(class="bg-bg-card w-full p-6 flex flex-col gap-3 max-w-[525px] md_h-[432px] min-w-[343px] h-[277px] md_gap-11 md_min-w-[525px]")
+                      div(class="relative h-[178px] md_h-[272px]")
+                        +imageClass('8', 'jpg', 'w-full h-full object-cover')
+                      .flex.items-center.justify-between.flex-col.gap-5
+                        .w-full.flex.justify-between
+                          div(class="flex gap-2.5 items-center")
+                            +imageRandomUser('women', '40', 'w-11 h-11 rounded-[50%] md:w-16 md:h-16')
+                            div
+                              span.text-text-main.text-xl.font-semibold.md_text-3xl @wzard
+                          .flex.gap-1.items-center
+                            span(class="text-text-main text-xl font-semibold md:text-3xl") ERC-721
+                    li(class="bg-bg-card w-full p-6 flex flex-col gap-3 max-w-[525px] md_h-[432px] min-w-[343px] h-[277px] md_gap-11 md_min-w-[525px]")
+                      div(class="relative h-[178px] md_h-[272px]")
+                        +imageClass('7', 'jpg', 'w-full h-full object-cover')
+                      .flex.items-center.justify-between.flex-col.gap-5
+                        .w-full.flex.justify-between
+                          div(class="flex gap-2.5 items-center")
+                            +imageRandomUser('men', '40', 'w-11 h-11 rounded-[50%] md:w-16 md:h-16')
+                            div
+                              span.text-text-main.text-xl.font-semibold.md_text-3xl @wzard
+                          .flex.gap-1.items-center
+                            span(class="text-text-main text-xl font-semibold md:text-3xl") ERC-721
+                    li(class="bg-bg-card w-full p-6 flex flex-col gap-3 max-w-[525px] md_h-[432px] min-w-[343px] h-[277px] md_gap-11 md_min-w-[525px]")
+                      div(class="relative h-[178px] md_h-[272px]")
+                        +imageClass('6', 'jpg', 'w-full h-full object-cover')
+                      .flex.items-center.justify-between.flex-col.gap-5
+                        .w-full.flex.justify-between
+                          div(class="flex gap-2.5 items-center")
+                            +imageRandomUser('women', '35', 'w-11 h-11 rounded-[50%] md:w-16 md:h-16')
+                            div
+                              span.text-text-main.text-xl.font-semibold.md_text-3xl by @hgfd
+                          .flex.gap-1.items-center
+                            span(class="text-text-main text-xl font-semibold md:text-3xl") ERC-456
+                    li(class="hidden bg-bg-card w-full p-6 flex-col gap-3 max-w-[525px] md_h-[432px] min-w-[343px] h-[277px] md_gap-11 md_min-w-[525px]")
+                      div(class="relative h-[178px] md_h-[272px]")
+                        +imageClass('4', 'jpg', 'w-full h-full object-cover')
+                      .flex.items-center.justify-between.flex-col.gap-5
+                        .w-full.flex.justify-between
+                          div(class="flex gap-2.5 items-center")
+                            +imageRandomUser('men', '52', 'w-11 h-11 rounded-[50%] md:w-16 md:h-16')
+                            div
+                              span.text-text-main.text-xl.font-semibold.md_text-3xl @kjhgf
+                          .flex.gap-1.items-center
+                            span(class="text-text-main text-xl font-semibold md:text-3xl") ERC-582
+                    li(class="hidden bg-bg-card w-full p-6 flex-col gap-3 max-w-[525px] md_h-[432px] min-w-[343px] h-[277px] md_gap-11 md_min-w-[525px]")
+                      div(class="relative h-[178px] md_h-[272px]")
+                        +imageClass('4', 'jpg', 'w-full h-full object-cover')
+                      .flex.items-center.justify-between.flex-col.gap-5
+                        .w-full.flex.justify-between
+                          div(class="flex gap-2.5 items-center")
+                            +imageRandomUser('men', '52', 'w-11 h-11 rounded-[50%] md:w-16 md:h-16')
+                            div
+                              span.text-text-main.text-xl.font-semibold.md_text-3xl @kjhgf
+                          .flex.gap-1.items-center
+                            span(class="text-text-main text-xl font-semibold md:text-3xl") ERC-582
+                    li(class="hidden bg-bg-card w-full p-6 flex-col gap-3 max-w-[525px] md_h-[432px] min-w-[343px] h-[277px] md_gap-11 md_min-w-[525px]")
+                      div(class="relative h-[178px] md_h-[272px]")
+                        +imageClass('3', 'jpg', 'w-full h-full object-cover')
+                      .flex.items-center.justify-between.flex-col.gap-5
+                        .w-full.flex.justify-between
+                          div(class="flex gap-2.5 items-center")
+                            +imageRandomUser('women', '95', 'w-11 h-11 rounded-[50%] md:w-16 md:h-16')
+                            div
+                              span.text-text-main.text-xl.font-semibold.md_text-3xl @wzard
+                          .flex.gap-1.items-center
+                            span(class="text-text-main text-xl font-semibold md:text-3xl") ERC-721
+    button.mt-12.mx-auto.block.cursor-pointer.py-3.px-14.font-semibold.text-lg.border.border-text-secondary.md_text-3xl.md_font-medium View All
