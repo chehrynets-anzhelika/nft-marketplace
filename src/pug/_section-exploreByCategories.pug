@@ -1,0 +1,81 @@
+include ./libs/_libs
+section(class="bg-[#251928] mx-auto")
+  div(class="max-w-screen-xl min-w-sm px-4 py-[74px] mx-auto")
+    .flex.justify-center.items-center
+      h2(class="md_text-6xl md_mb-[88px] relative z-20 inline-block text-nowrap font-title font-bold text-3xl mb-[68px] before_absolute before_-z-10 before_block before_bg-[#8613A5] before_w-[84px] before_h-[84px] before_rounded-[50%] before_-bottom-1/2 before_-left-[1.25rem] md_before_w-[110px] md_before_h-[110px]")
+        | Explore By Categories
+    ul.flex.items-center.flex-col.gap-12.md_flex-row.md_justify-between.overflow-hidden
+      li(class="bg-bg-card w-full p-6 flex flex-col gap-3 max-w-[415px] min-w-[343px] h-[501px] relative")
+        +imageClass('4', 'jpg', 'w-full h-full object-cover')
+        .flex.items-center.justify-between.flex-col.gap-5
+          .w-full.flex.justify-between
+            div(class="flex gap-2.5")
+              +imageRandomUser('women', '79', 'w-10 h-10 rounded-[50%] md_w-14 md_h-14')
+              div
+                p.font-semibold.md_text-2xl.md_font-medium Virtual Art
+                span.text-cardcolor.text-sm.font-normal.md_text-xl by @wzard
+            .flex.gap-1.items-center
+              svg.size-6(xmlns="http_//www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="1.5", stroke="#BDAAC1")
+                path(stroke-linecap="round", stroke-linejoin="round", d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z")
+              span.text-cardcolor.text-2xl.font-normal.md_text-3xl 45
+          .w-full.flex.justify-between
+                    p.font-normal.text-xl.text-card-color-second Current Bid
+                    p.font-title.font-bold.text-2xl 4.89 ETH
+        div(class="opacity-0 hover_opacity-100 transition-opacity ease-in-out duration-1000 flex absolute bg-black/50 top-0 left-0 justify-center items-center w-full h-full")
+          button(class="bg-text-secondary w-[187px] h-[54px] text-black text-center font-bold text-xl") Place a bid
+      li(class="bg-bg-card w-full p-6 flex flex-col gap-3 max-w-[415px] min-w-[343px] h-[501px] relative")
+        +imageClass('3', 'jpg', 'w-full h-full object-cover')
+        .flex.items-center.justify-between.flex-col.gap-5
+          .w-full.flex.justify-between
+                        div(class="flex gap-2.5")
+                          +imageRandomUser('men', '52', 'w-10 h-10 rounded-[50%] md_w-14 md_h-14')
+                          div
+                            p.font-semibold.md_text-2xl.md_font-medium Virtual Art
+                            span.text-cardcolor.text-sm.font-normal.md_text-xl by @qwert
+                        .flex.gap-1.items-center
+                          svg.size-6(xmlns="http_//www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="1.5", stroke="#BDAAC1")
+                            path(stroke-linecap="round", stroke-linejoin="round", d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z")
+                              span.text-cardcolor.text-2xl.font-normal.md_text-3xl 51
+          .w-full.flex.justify-between
+                                p.font-normal.text-xl.text-card-color-second Current Bid
+                                p.font-title.font-bold.text-2xl 5.15 ETH
+        div(class="opacity-0 hover_opacity-100 transition-opacity ease-in-out duration-1000 flex absolute bg-black/50 top-0 left-0 justify-center items-center w-full h-full")
+          button(class="bg-text-secondary w-[187px] h-[54px] text-black text-center font-bold text-xl") Place a bid
+      li(class="bg-bg-card w-full p-6 flex flex-col gap-3 max-w-[415px] min-w-[343px] h-[501px] relative")
+        +imageClass('8', 'jpg', 'w-full h-full object-cover')
+        .flex.items-center.justify-between.flex-col.gap-5
+          .w-full.flex.justify-between
+                                    div(class="flex gap-2.5")
+                                      +imageRandomUser('women', '12', 'w-10 h-10 rounded-[50%] md_w-14 md_h-14')
+                                      div
+                                        p.font-semibold.md_text-2xl.md_font-medium Virtual Art
+                                        span.text-cardcolor.text-sm.font-normal.md_text-xl by @iuyt
+                                    .flex.gap-1.items-center
+                                      svg.size-6(xmlns="http_//www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="1.5", stroke="#BDAAC1")
+                                        path(stroke-linecap="round", stroke-linejoin="round", d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z")
+                                          span.text-cardcolor.text-2xl.font-normal.md_text-3xl 10
+          .w-full.flex.justify-between
+                                            p.font-normal.text-xl.text-card-color-second Current Bid
+                                            p.font-title.font-bold.text-2xl 1.65 ETH
+        div(class="opacity-0 hover_opacity-100 transition-opacity ease-in-out duration-1000 flex absolute bg-black/50 top-0 left-0 justify-center items-center w-full h-full")
+         button(class="bg-text-secondary w-[187px] h-[54px] text-black text-center font-bold text-xl") Place a bid
+      li(class="hidden bg-bg-card w-full p-6 md_flex flex-col gap-3 max-w-[415px] min-w-[343px] h-[501px] relative")
+        +imageClass('5', 'jpg', 'w-full h-full object-cover')
+        .flex.items-center.justify-between.flex-col.gap-5
+         .w-full.flex.justify-between
+                                                div(class="flex gap-2.5")
+                                                  +imageRandomUser('men', '85', 'w-10 h-10 rounded-[50%] md_w-14 md_h-14')
+                                                  div
+                                                    p.font-semibold.md_text-2xl.md_font-medium Virtual Art
+                                                    span.text-cardcolor.text-sm.font-normal.md_text-xl by @tyhgb
+                                                .flex.gap-1.items-center
+                                                  svg.size-6(xmlns="http_//www.w3.org/2000/svg", fill="none", viewBox="0 0 24 24", stroke-width="1.5", stroke="#BDAAC1")
+                                                    path(stroke-linecap="round", stroke-linejoin="round", d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z")
+                                                      span.text-cardcolor.text-2xl.font-normal.md_text-3xl 84
+         .w-full.flex.justify-between
+                                                        p.font-normal.text-xl.text-card-color-second Current Bid
+                                                        p.font-title.font-bold.text-2xl 3.11 ETH
+        div(class="opacity-0 hover_opacity-100 transition-opacity ease-in-out duration-1000 flex absolute bg-black/50 top-0 left-0 justify-center items-center w-full h-full")
+         button(class="bg-text-secondary w-[187px] h-[54px] text-black text-center font-bold text-xl") Place a bid
+    button.mt-12.mx-auto.block.py-3.px-14.font-semibold.text-lg.border.border-text-secondary.md_text-3xl.md_font-medium.cursor-pointer View All
+
