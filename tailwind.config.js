@@ -18,7 +18,10 @@ module.exports = {
         "card-color-second": "#C6BFC8",
         "card-btn-bg": "rgba(233, 215, 167, 0.1)",
         "top-creators-card-bg": "#302034",
-        "top-creators-element-color": "#E03054"
+        "top-creators-element-color": "#E03054",
+        "input-border": "#E7B226",
+        "input-placeholder": "#A48EA9",
+        "footer-bg": "#251928"
       },
       gridTemplateColumns: {
         "layout": "repeat(auto-fit, minmax(200px, 1fr))"
